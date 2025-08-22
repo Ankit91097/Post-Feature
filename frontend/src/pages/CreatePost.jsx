@@ -20,7 +20,7 @@ const CreatePost = () => {
       formData.append("caption", data.caption);
 
       // 🟢 API call with form-data
-      await axios.post("http://localhost:3000/posts", formData, {
+      await axios.post("https://post-feature-j6f8.onrender.com/posts", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

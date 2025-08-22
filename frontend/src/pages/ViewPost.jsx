@@ -7,7 +7,7 @@ const ViewPost = () => {
 
   const getPostData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/posts");
+      const response = await axios.get("https://post-feature-j6f8.onrender.com/posts");
       setPosts(response.data.post); // make sure backend returns { post: [...] }
     } catch (error) {
       console.error("Error fetching posts:", error);
